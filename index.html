@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youre dug</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/197c98fcf8.js" crossorigin="anonymous"></script>
+    <title>Playground reservation</title>
 </head>
+
 <body>
-    <form action="">
-        <input type="text" placeholder="Full name">
-        <input type="email" placeholder="Your email">
-        <textarea name="message" id="" cols="10" rows="5"></textarea>
-        <textarea name="message" placeholder="Your message" cols="10" rows="5"></textarea>
-        <button type="submit"> send message </button>
-    </form>
-    
+    <main class="screen">
+        <form class="form" autocomplete="off">
+            <h1 class="main-title">Playground reservation</h1>
+            <h3 class="main-info">If you want to make a reservation, please fill in the form below.</h3>
+            <label for="name" class="label">Full name</label>
+            <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name">
+            <label for="email" class="label">Email address</label>
+            <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required
+                autofocus>
+                <label for="name" class="label">Date</label>
+                <input type="date" name="name" class="input-field" >
+            <div class="select-wrapper">
+                <label for="select" class="label">Which playground will you preserve?</label>
+                <select name="playground" class="select">
+                    <option value="Playground north">Playground north</option>
+                    <option value="Playground south">Playground south</option>
+                    <option value="Playground east">Playground east</option>
+                    <option value="Playground west">Playground west</option>
+                </select>
+            </div>
+            
+            <div class="select-wrapper-time">
+                <label for="select" class="label">Witch time </label>
+                <select name="playground" class="select">
+                    <option value="Morning">Morning</option>
+                    <option value="Aftermon">Aftermom</option>
+
+                </select>
+            </div>
+            <label class="More info">
+                <div class="more_text">Your message</div>
+                <textarea name="message" cols="30" rows="4" class="textarea"
+                    placeholder="If you want to add something you can write it here"></textarea>
+            </label>
+            <button type="submit" class="button"> Submit </button>
+        </form>
+    </main>
 </body>
+
 </html>
